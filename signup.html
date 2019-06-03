@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>My Group Project</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: wthite;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Add padding to containers */
+    .container {
+      padding: 4px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .registerbtn:hover {
+      opacity: 1;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+    
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    </style>
+<title>My Group Project</title>
+</head>
+
+<body>
+    <div id="slideout-menu">
+        <ul>
+              <li>
+                      <a href="index.html">Trang chủ</a>
+                  </li>
+                  <li>
+                      <a href="blogslist.html">Sự kiện</a>
+                  </li>
+                  <li>
+                      <a href="tintuc.html">Tin tức</a>
+                  </li>
+                  <li>
+                      <a href="login.html">Đăng nhập</a>
+                    </li>
+                  <li>
+                      <a href="about.html">About</a>
+                  </li>
+                  <li>
+                      <input type="text" placeholder="Search Here">
+                  </li>
+        </ul>
+    </div>
+  
+    <nav>
+        <div id="logo-img">
+            <a href="#">
+              <img src="img/logo4_scale.png" alt="Logo">
+            </a>
+        </div>
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+              <li>
+                      <a  href="index.html">Trang chủ</a>
+                  </li>
+                  <li>
+                      <a href="blogslist.html">Sự kiện</a>
+                  </li>
+                  <li>
+                      <a  href="tintuc.html">Tin tức</a>
+                  </li>
+                  <li>
+                      <a  class="active" href="login.html">Đăng nhập</a>
+                    </li>
+                  <li>
+                      <a href="about.html">About</a>
+                  </li>
+                  <li>
+                      <div id="search-icon">
+                          <i class="fas fa-search"></i>
+                      </div>
+              </li>
+        </ul>
+    </nav>
+  
+    <div id="searchbox">
+        <input type="text" placeholder="Search Here">
+    </div>
+  
+
+  <main>
+      <h2 class="page-heading">Tạo tài khoản</h2>
+        
+      <section>
+          <form action="/action_page.php">
+            <div class="container">
+              <h3>Đăng kí tài khoản</h3>
+              <p>Vui lòng điền hết để đăng kí tài khoản</p>
+              <hr>
+              
+              <label for="uname"><b>Tên đăng nhập</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Mật khẩu</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              <hr>
+          
+              <button type="submit" class="registerbtn">Đăng kí</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a>.</p>
+            </div>
+          </form>
+        </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
